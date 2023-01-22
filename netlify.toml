@@ -3,6 +3,11 @@
   command = "npm install && npm run build"
 
 [[redirects]]
+  from = "/"
+  to = "/home/"
+  status = 200
+
+[[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
@@ -11,4 +16,3 @@
   from = "/*"
   to = "/404"
   status = 404
-
